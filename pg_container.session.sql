@@ -1,1 +1,0 @@
-SELECT * FROM sport_place;

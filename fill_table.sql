@@ -1,8 +1,8 @@
-COPY sport_kind  FROM 'sport_kind.csv' 
-DELIMITER ',' CSV HEADER;
+INSERT INTO sport_kind(name, max_visitors, price)
+VALUES ('Yoga', 15, 200), ('Swimming', 10, 300), ('Workout', 30, 150);
 
-COPY sport_place  FROM 'sport_place.csv'
-DELIMITER ',' CSV HEADER;
+INSERT INTO sport_place(name, max_visitors)
+VALUES ('Gym', 30), ('Swimming pool', 10), ('Pool', 50);
 
 COPY visitor FROM 'visitor.csv'
 DELIMITER ',' CSV HEADER;
